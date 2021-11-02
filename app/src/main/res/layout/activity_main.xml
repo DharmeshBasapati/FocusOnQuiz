@@ -5,44 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="20dp"
-    android:paddingBottom="150dp"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnStartRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START QUIZ"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="30"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="30" />
 
     <TextView
         android:id="@+id/tvQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="20dp"
+        android:ellipsize="end"
         android:gravity="center"
-        tools:text="This is question no 1"
-        android:textSize="25sp"
+        android:maxLines="4"
+        android:textSize="20sp"
+        android:visibility="gone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvCounter" />
+        app:layout_constraintTop_toBottomOf="@id/tvCounter"
+        tools:text="This is question no 1 This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1" />
 
     <Button
         android:id="@+id/btnA"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        tools:text="MANCHESTER UNITED"
         android:textSize="12sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@id/btnB"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        tools:text="MANCHESTER UNITED" />
 
     <Button
         android:id="@+id/btnB"
@@ -50,31 +65,34 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        tools:text="B"
         android:textSize="12sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnA"
-        app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        tools:text="B" />
 
     <Button
         android:id="@+id/btnC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="C"
         android:textSize="12sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@id/btnD"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnA" />
+        app:layout_constraintTop_toBottomOf="@id/btnA"
+        tools:text="C" />
 
     <Button
         android:id="@+id/btnD"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        tools:text="D"
         android:textSize="12sp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnC"
-        app:layout_constraintTop_toBottomOf="@id/btnB" />
+        app:layout_constraintTop_toBottomOf="@id/btnB"
+        tools:text="D" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
