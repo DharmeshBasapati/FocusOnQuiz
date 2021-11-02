@@ -4,25 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="20dp"
+    android:background="@drawable/kbc_bg"
     tools:context=".MainActivity">
 
-    <Button
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnStartRestart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
         android:text="START QUIZ"
+        android:textColor="@color/white"
         android:textSize="15sp"
+        android:visibility="visible"
+        app:backgroundTint="#00005a"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/tikhe_kone"
+        app:strokeColor="#979b45"
+        app:strokeWidth="2dp" />
 
     <TextView
         android:id="@+id/tvCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:fontFamily="@font/stoke"
+        android:textColor="@color/white"
+        android:textSize="50sp"
         android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,68 +46,107 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="30" />
 
-    <TextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/tvQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="20dp"
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="4"
-        android:textSize="20sp"
-        android:visibility="gone"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:backgroundTint="#00005a"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvCounter"
+        app:shapeAppearance="@style/tikhe_kone"
+        app:strokeColor="#979b45"
+        app:strokeWidth="2dp"
         tools:text="This is question no 1 This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1This is question no 1" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnA"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:textColor="@color/white"
         android:textSize="12sp"
-        android:visibility="gone"
+        android:visibility="visible"
+        app:backgroundTint="#00005a"
         app:layout_constraintEnd_toStartOf="@id/btnB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        app:shapeAppearance="@style/tikhe_kone"
+        app:strokeColor="#979b45"
+        app:strokeWidth="2dp"
         tools:text="MANCHESTER UNITED" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnB"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:textColor="@color/white"
         android:textSize="12sp"
-        android:visibility="gone"
+        android:visibility="visible"
+        app:backgroundTint="#00005a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnA"
         app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        app:shapeAppearance="@style/tikhe_kone"
+        app:strokeColor="#979b45"
+        app:strokeWidth="2dp"
         tools:text="B" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:textColor="@color/white"
         android:textSize="12sp"
-        android:visibility="gone"
+        android:visibility="visible"
+        app:backgroundTint="#00005a"
         app:layout_constraintEnd_toStartOf="@id/btnD"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnA"
+        app:shapeAppearance="@style/tikhe_kone"
+        app:strokeColor="#979b45"
+        app:strokeWidth="2dp"
         tools:text="C" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnD"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:textColor="@color/white"
         android:textSize="12sp"
-        android:visibility="gone"
+        android:visibility="visible"
+        app:backgroundTint="#00005a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnC"
         app:layout_constraintTop_toBottomOf="@id/btnB"
+        app:shapeAppearance="@style/tikhe_kone"
+        app:strokeColor="#979b45"
+        app:strokeWidth="2dp"
         tools:text="D" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

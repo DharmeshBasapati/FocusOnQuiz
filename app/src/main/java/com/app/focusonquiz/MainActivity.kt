@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun jumpToNextQuestion() {
-        binding.tvCounter.setTextColor(Color.DKGRAY)
+        binding.tvCounter.setTextColor(Color.WHITE)
         binding.tvCounter.text = "10"
         ctimer?.cancel()
         questionNum += 1
