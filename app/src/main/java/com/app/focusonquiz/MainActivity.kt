@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         binding.apply {
 
             btnStartRestart.setOnClickListener {
@@ -133,28 +135,28 @@ class MainActivity : AppCompatActivity() {
                 when (arrayListOf("A", "B", "C", "D").random()) {
 
                     "A" -> {
-                        btnA.text = questionsList[questionNum].opt1
-                        btnB.text = questionsList[questionNum].opt2
-                        btnC.text = questionsList[questionNum].opt3
-                        btnD.text = questionsList[questionNum].opt4
+                        btnA.text = "A: " + questionsList[questionNum].opt1
+                        btnB.text = "B: " + questionsList[questionNum].opt2
+                        btnC.text = "C: " + questionsList[questionNum].opt3
+                        btnD.text = "D:" + questionsList[questionNum].opt4
                     }
                     "B" -> {
-                        btnB.text = questionsList[questionNum].opt1
-                        btnA.text = questionsList[questionNum].opt2
-                        btnC.text = questionsList[questionNum].opt3
-                        btnD.text = questionsList[questionNum].opt4
+                        btnB.text = "B: " + questionsList[questionNum].opt1
+                        btnA.text = "A: " + questionsList[questionNum].opt2
+                        btnC.text = "C: " + questionsList[questionNum].opt3
+                        btnD.text = "D: " + questionsList[questionNum].opt4
                     }
                     "C" -> {
-                        btnC.text = questionsList[questionNum].opt1
-                        btnB.text = questionsList[questionNum].opt2
-                        btnA.text = questionsList[questionNum].opt3
-                        btnD.text = questionsList[questionNum].opt4
+                        btnC.text = "C: " + questionsList[questionNum].opt1
+                        btnB.text = "B: " + questionsList[questionNum].opt2
+                        btnA.text = "A: " + questionsList[questionNum].opt3
+                        btnD.text = "D: " + questionsList[questionNum].opt4
                     }
                     "D" -> {
-                        btnD.text = questionsList[questionNum].opt1
-                        btnB.text = questionsList[questionNum].opt2
-                        btnC.text = questionsList[questionNum].opt3
-                        btnA.text = questionsList[questionNum].opt4
+                        btnD.text = "D: " + questionsList[questionNum].opt1
+                        btnB.text = "B: " + questionsList[questionNum].opt2
+                        btnC.text = "C: " + questionsList[questionNum].opt3
+                        btnA.text = "A: " + questionsList[questionNum].opt4
                     }
                 }
 
